@@ -52,3 +52,9 @@ bundle.js  676 kB       0  [emitted]  main
 ## Step 3: View Sample Page
 
 Open `helloworld.html` in your browser (via a web server) and you will see the React page.
+
+## More readings
+
+- [React's official getting started page](https://facebook.github.io/react/docs/getting-started.html)
+- [React-howto by Pete Hunt](https://github.com/petehunt/react-howto/blob/master/README.md)
+- [Setting up a Quick Dev Environment for React, ES2015, Babel, and Webpack](http://matthewmachuga.com/blog/2015/setting-up-a-quick-dev-environment-for-react-es2015-babel-and-webpack.html)
