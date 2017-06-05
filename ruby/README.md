@@ -103,11 +103,10 @@ rails server
 
 ## Known Issues
 
-- Error when building gem native extensions for `pg` on macOS.
+Error when building gem native extensions for `pg` on macOS.
 
-    ```
+```
 Gem::Ext::BuildError: ERROR: Failed to build gem native extension.
-
     current directory: /Users/pmcc749i/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/pg-0.19.0/ext
 /Users/pmcc749i/.rbenv/versions/2.3.1/bin/ruby -r ./siteconf20160929-41926-1ce9xrk.rb extconf.rb
 checking for pg_config... no
@@ -120,8 +119,9 @@ Could not create Makefile due to some reason, probably lack of necessary
 libraries and/or headers.  Check the mkmf.log file for more details.  You may
 need configuration options.
 ```
-    **Solution:**
 
-    ```
+**Solution:**
+
+```
 gem install pg -v '0.19.0' -- --with-pg-config=/Applications/Postgres.app/Contents/Versions/9.5/bin/pg_config
 ```
