@@ -1,1 +1,1 @@
--d postgresql --skip-test-unit --skip-turbolinks
+-d postgresql --skip-test --skip-system-test --skip-turbolinks --skip-coffee --skip-action-cable
