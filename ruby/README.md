@@ -73,29 +73,29 @@ rails new <project_name>
 
 1. Create the database:
 
-  ```
-bundle exec rake db:create
-```
+	```
+	bundle exec rake db:create
+	```
 
 2. Create the database tables:
 
-  ```
-bundle exec rake db:migrate
-```
+	```
+	bundle exec rake db:migrate
+	```
 
 3. Prepare sample data:
 
-  ```
-bundle exec rake db:seed
-```
+	```
+	bundle exec rake db:seed
+	```
 
 ### C. Start the development web server
 
 1. You can start the local development web server with the following command:
 
-  ```
-rails server
-```
+	```
+	rails server
+	```
 
 2. You can now visit the local development site at [http://localhost:3000](http://localhost:3000).
 
