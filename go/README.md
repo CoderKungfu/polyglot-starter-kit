@@ -13,10 +13,10 @@ Here are instructions for setting up your MacBook Pro for local development envi
 4. Add the following into your `.bashrc` or `.zshrc`:
 
 	```bash
-export GOROOT=/usr/local/go
-export GOPATH=$HOME/go
-export PATH=$PATH:$GOROOT/bin:$GOPATH/bin
-```
+	export GOROOT=/usr/local/go
+	export GOPATH=$HOME/go
+	export PATH=$PATH:$GOROOT/bin:$GOPATH/bin
+	```
 
 	- `GOROOT` is the folder where `Go` is installed in.
 	- `GOPATH` is the local working directory for your source code (i.e. `~/go`).
@@ -24,17 +24,18 @@ export PATH=$PATH:$GOROOT/bin:$GOPATH/bin
 
 5. Activate the new configuration by [sourcing](http://www.tldp.org/HOWTO/Bash-Prompt-HOWTO/x237.html) the file:
 
+	```bash
+	source ~/.zshrc
 	```
-source ~/.zshrc
-```
+
 	(Or you can just start a new terminal tab/window. 😇)
 
 6. Create a organization for your projects (eg. `coderkungfu`). Use this command to create the working directory for your source code:
 	
 	```bash
-mkdir -p $GOPATH/src/github.com/coderkungfu
-```
-
+	mkdir -p $GOPATH/src/github.com/coderkungfu
+	```
+	
 	* `Go` packages are checked out into a folder with the full `Git` path (ie. `domain`/`organization`/`project_name.git`).
 	* eg. `github.com/coderkungfu/my-awesome-project`
 
@@ -43,8 +44,8 @@ mkdir -p $GOPATH/src/github.com/coderkungfu
 
 	Example:
 
+	```bash
+	git clone git@github.com:coderkungfu/myproject $GOPATH/src/github.com/coderkungfu/myproject
 	```
-git clone git@github.com:coderkungfu/myproject $GOPATH/src/github.com/coderkungfu/myproject
-```
 
 6. Happy hacking!
