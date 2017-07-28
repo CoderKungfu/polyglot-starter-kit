@@ -8,36 +8,36 @@ Here are the steps you will need to setup your local development environment (ma
 
 2. Install [rbenv](https://github.com/rbenv/rbenv):
 
-  ```
-brew update
-brew install rbenv ruby-build
-```
+	```
+	brew update
+	brew install rbenv ruby-build
+	```
 
 3. Add `rbenv` support to your local profile:
 
-  ```
-echo 'export PATH="$HOME/.rbenv/bin:$PATH"' >> ~/.bash_profile
-echo 'eval "$(rbenv init -)"' >> ~/.bash_profile
-```
+	```
+	echo 'export PATH="$HOME/.rbenv/bin:$PATH"' >> ~/.bash_profile
+	echo 'eval "$(rbenv init -)"' >> ~/.bash_profile
+	```
 
-  If you are using `zsh`:
+	If you are using `zsh`:
 
-  ```
-echo 'eval "$(rbenv init -)"' >> ~/.zshrc
-```
+	```
+	echo 'eval "$(rbenv init -)"' >> ~/.zshrc
+	```
 
 3. Install the current Ruby version:
 
-  ```
-rbenv install -l
-rbenv install 2.4.1
-```
+	```
+	rbenv install -l
+	rbenv install 2.4.1
+	```
 
 4. Use it globally:
 
-  ```
-rbenv global 2.4.1
-```
+	```
+	rbenv global 2.4.1
+	```
 
 ### B. Install PostgreSQL database server
 
@@ -50,14 +50,14 @@ You will need [PostgreSQL](http://www.postgresql.org) installed and started.
 1. Install [Bundler](http://bundler.io/), the Ruby dependency management software:
 
 	```
-gem install bundler
-```
+	gem install bundler
+	```
 
 2. Install [Ruby on Rails](http://rubyonrails.org):
 
 	```
-gem install rails
-```
+	gem install rails
+	```
 
 	This will install a `rails` command line software that runs in your terminal.
 
