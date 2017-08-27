@@ -32,7 +32,9 @@ CODE
 
 append_file ".gitignore", ".env"
 
-gem 'slim-rails'
+if yes? "Do you want to use Slim?"
+  gem 'slim-rails'
+end
 
 gem_group :development, :test do
   gem 'rspec-rails'
