@@ -1,0 +1,1 @@
+-d postgresql --skip-test --skip-system-test --skip-turbolinks --skip-coffee --skip-javascript --skip-sprockets --skip-action-cable

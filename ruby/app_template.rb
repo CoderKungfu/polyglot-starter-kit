@@ -73,6 +73,12 @@ if yes? "Do you want to generate a root controller?"
   route "root to: '#{name}\#index'"
 end
 
+if yes? "Do you want to use webpack?"
+  after_bundle do
+    rails_command "webpacker:install"
+  end
+end
+
 if yes? "Do you want to create a Git repo?"
   after_bundle do
     git :init
@@ -80,3 +86,4 @@ if yes? "Do you want to create a Git repo?"
     git commit: "-a -m 'initial commit'"
   end
 end
+
